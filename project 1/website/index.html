@@ -1,0 +1,183 @@
+<!--
+Development:  The largest phase (grade-wise) of this project is the development phase. During this phase students will
+develop their single page website into an HTML document. Students will want to develop their project with the following
+folder structure shown. Students will be expected to understand and demonstrate the following criteria in their files:
+
+   • Understanding of site naming conventions and folder structure and organization.
+   • Linking to external stylesheets (no embedded styles).
+   • Linking to and placing images.
+   • Inclusion of alt tags and accessibility attributes.
+   • Inclusion of title and meta tags in the document <head>.
+   • Working with CSS for layout and fonts as well as an understanding of the CSS box model and usage of the DIV tag for page structure.
+   • Display an understanding of the 5 types of CSS selectors (tag, ID, class, pseudo, and compound).
+   • Creation of well-structured and semantic HTML markup.
+   • Display a clear understanding of graphic optimization and graphic formats (GIF, PNG, JPG) on the web.
+   • Usage of CSS background graphics and the background property.
+   • Creation of links (placeholder links will suffice for our single page site).
+   • Creation of a CSS, list-based <ul> navigation with roll overs.
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Suffering USA</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <script src="https://use.typekit.net/jju1azb.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+    <script src="https://use.fontawesome.com/abb5705146.js"></script>
+
+</head>
+<body>
+<section id="surf">
+    <nav class="navbar no-background" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand tk-funkydori" href="#">Ground Swell</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li class="page-scroll"><a href="#surf">Surf</a></li>
+                <li class="page-scroll"><a href="#lifeStyle">Life Style</a></li>
+                <li class="page-scroll"><a href="#gear">Gear</a></li>
+                <li class="page-scroll"><a href="#videos">Video</a></li>
+                <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <h1 id="title">Ground Swell</h1>
+    <span class="page-scroll"><a href="#lifeStyle"><i class="fa fa-arrow-circle-down fa-5x fa-inverse"></i></a></span>
+</section>
+<section id="lifeStyle" class="pd-tp-bm-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="bd-bt-red">
+                    Life Style
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias amet beatae commodi
+                    deserunt illo laboriosam, minima necessitatibus numquam, odit officia reiciendis similique sunt
+                    totam? Alias iste quo repellendus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gear" class="pd-tp-bm-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="bd-bt-blue">
+                    Gear
+                </h1>
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+</section>
+<section id="videos" class="pd-tp-bm-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="bd-bt-olive">
+                    Videos
+                </h1>
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+</section>
+<section class="bg-dark pd-tp-bm-50" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="bd-bt-yellow">
+                    Contact Us
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="contact-form" role="form" onsubmit="return false">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="companyName" class="form-control" id="company-name"
+                               placeholder="Company/Organization Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" id="contact-email"
+                               placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="phone" name="phone" class="form-control" id="contact-phone"
+                               placeholder="Phone Number (Optional, but we really prefer to have it)">
+                    </div>
+                    <div class="form-group">
+                        <input type="subject" name="subject" class="form-control" id="contact-subject"
+                               placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" id="contact-message" style="height:100px"
+                                  placeholder="Leave us a note!"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="small">* indicates required fields</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button id="contact-submit" type="button" class="btn btn-dark"
+                                    data-loading-text="Sending...">Send »
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!--<img src="public/img/thanks.png" alt="Thank You!" class="img-responsive">-->
+                <h2 id="thanks">Thank<br>You!</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="public/js/main.js"></script>
+</body>
+</html>

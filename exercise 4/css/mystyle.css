@@ -1,0 +1,26 @@
+.pd-left-1 { padding-left: 1em; }
+.pd-right-1 { padding-right: 1em; }
+.pd-top-1 { padding-top: 1em; }
+.pd-bottom-1 { padding-bottom:1em; }
+
+.mg-left-1 { margin-left: 1em; }
+.mg-right-1 { margin-right: 1em; }
+.mg-top-1 { margin-top: 1em; }
+.mg-bottom-1 { margin-bottom:1em; }
+
+.img-small {
+    max-width:200px;
+}
+
+.carousel-img-5 {
+    width:20%;
+}
+
+.carousel-img-5 > img {
+    width: 100%;
+}
+
+div:first-child > p:first-letter{
+    font-size: 2em;
+    font-weight: 900;
+}

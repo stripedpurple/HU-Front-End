@@ -1,0 +1,393 @@
+<!---
+
+Create an HTML document (or do a 'save as' on your first exercise and expand upon that one) called exercise-3-JBB.html with:
+
+    • A minimum of 6 images within your HTML document.
+    • All images must have alt and title attributes with them.
+    • Demonstrate horizontal image placement with examples of left and right align attribute.
+    • You must demonstrate examples of image optimization for PNG-8, GIF and JPG.  Images must be correctly sized, cropped and compressed for web at 72dpi.
+    • Create a table with at least 3 rows and 3 columns.  Populate it with tabular data.
+    • Demonstrate the use of the <th> element within you table - for table headings.
+        • Create an HTML code comment within your code.
+        • Group elements within a <div> tag and other elements within a <span> tag.  These grouped elements will remain visually the same as without the grouping tags.
+    • Create an <iframe> in your code and embed a Google Map.
+    • Create <meta> tags within your document for description, keywords and author.
+    • Demonstrate your understanding of Escaped Characters (HTML Entities) by creating at least 2 of them in your code.  Example: &amp; for ampersand.
+
+
+Create an HTML document called index.html and place it in a root folder called Exercise 4 along with a normalize and mystyles.css file -
+
+The exercise will be graded on these criteria and must contain the following:
+    • A proper HTML5 doctype
+    • An externally linked normalize.css file and an externally linked styles.css file
+    • Demonstration of CSS property color used for typographic elements in your document.
+    • Demonstration of CSS property background-color used for typographic elements in your document.
+    • Demonstration of CSS property value of RGBA to show use of Opacity used for typographic elements in your document.
+    • Demonstration of CSS property font-family for font styling of elements.
+    • Demonstration of CSS property font-size for font styling of elements.
+    • Demonstration of CSS property @font-face for font styling of elements (you must download fonts from the sites listed in the book on page 277 and reference them with @font-face).
+    • Demonstration of CSS property font-style for font styling of elements.
+    • Demonstration of CSS property text-transform for font styling of elements.
+    • Demonstration of CSS property text-decoration for font styling of elements.
+    • Demonstration of CSS property line-height for font styling of elements.
+    • Demonstration of CSS property letter-spacing and word-spacing for font styling of elements.
+    • Demonstration of CSS property text-align, text-indent and text-shadow for font styling of elements.
+    • Demonstration of CSS pseudo class of :first-letter and :first-line for font styling of elements.
+    • Demonstration of CSS pseudo class of :hover for font styling of elements.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- NormailLatest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <title>Exercise 4</title>
+</head>
+<body>
+<!--Navigation-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<!--main content-->
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <h1>Hitchbriker</h1>
+                <p>Learn about the greats.</p>
+            </div>
+            <div class="row">
+                <h2>Alfred Hitchcock</h2>
+                <img src="http://i.imgur.com/VMs6rRA.png"
+                     class="img-responsive pull-left img-thumbnail img-small mg-right-1"
+                     alt="Photo of Alfred Hitchcock">
+                <p>Sir Alfred Joseph Hitchcock KBE (13 August 1899 – 29 April 1980)[1] was an English film director and
+                    producer,[2] at times referred to as "The Master of Suspense".[3] He pioneered many elements of the
+                    suspense
+                    and psychological thriller genres. He had a successful career in British cinema with both silent
+                    films and
+                    early talkies and became renowned as England's best director. Hitchcock moved to Hollywood in
+                    1939,[4] and
+                    became a US citizen in 1955.[5]
+                </p>
+                <p>
+                    Hitchcock became a highly visible public figure through interviews, movie trailers, cameo
+                    appearances in his
+                    own films, and the ten years in which he hosted the television programme Alfred Hitchcock Presents
+                    (1955-1965). He also fashioned for himself a recognisable directorial style.[6] Hitchcock's
+                    stylistic
+                    trademarks include the use of camera movement that mimics a person's gaze,[7] forcing viewers to
+                    engage in a
+                    form of voyeurism.[8] In addition, he framed shots to maximise anxiety, fear, or empathy, and used
+                    innovative forms of film editing.[8] His work often features fugitives on the run alongside "icy
+                    blonde"
+                    female characters.[9][10] In 1978, film critic John Russell Taylor described Hitchcock as "the most
+                    universally recognizable person in the world", and "a straightforward middle-class Englishman who
+                    just
+                    happened to be an artistic genius".[11]
+                </p>
+                <p>
+                    Prior to 1980, there had long been talk of Hitchcock being knighted for his contribution to film.
+                    Critic
+                    Roger Ebert wrote: "Other British directors like Sir Carol Reed and Sir Charlie Chaplin were
+                    knighted years
+                    ago, while Hitchcock, universally considered by film students to be one of the greatest filmmakers
+                    of all
+                    time, was passed over". Hitchcock later received his knighthood from Queen Elizabeth II in the 1980
+                    New Year
+                    Honours.[11]
+                </p>
+                <p>
+                    Hitchcock directed more than fifty feature films in a career spanning six decades and is often
+                    regarded as
+                    one of the most influential directors in cinematic history.[12][13] Following a 2007 critics' poll
+                    by
+                    Britain's Daily Telegraph in which he was ranked Britain's greatest filmmaker, one scholar wrote:
+                    "Hitchcock
+                    did more than any director to shape modern cinema, which would be utterly different without him. His
+                    flair
+                    was for narrative, cruelly withholding crucial information (from his characters and from the
+                    audience) and
+                    engaging the emotions of the audience like no one else."[14][15] Hitchcock's films Rear Window
+                    (1954),
+                    Vertigo (1958), North by Northwest (1959), and Psycho (1960) are regularly ranked among the greatest
+                    films of all time.
+                </p>
+                <span class="src"><a href="https://en.wikipedia.org/wiki/Alfred_Hitchcock">[Wikipedia]</a></span>
+            </div>
+            <div class="row">
+                <h3>Movies</h3>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(1).jpg" alt="thumb1" title="image of movie">
+                                Shadow of a Doubt (1943)
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(2).jpg" alt="thumb2" title="image of movie">
+                                The 39 Steps (1935)
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(3).jpg" alt="thumb3" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(4).jpg" alt="thumb4" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(5).jpg" alt="thumb5" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(6).jpg" alt="thumb6" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(7).jpg" alt="thumb7" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(8).jpg" alt="thumb8" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(9).jpg" alt="thumb9" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(10).jpg" alt="thumb10" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(11).jpg" alt="thumb11" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(12).jpg" alt="thumb12" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(13).jpg" alt="thumb13" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(14).jpg" alt="thumb14" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(15).jpg" alt="thumb15" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(16).jpg" alt="thumb16" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(17).jpg" alt="thumb17" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(18).jpg" alt="thumb18" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(19).jpg" alt="thumb19" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(20).jpg" alt="thumb20" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(21).jpg" alt="thumb21" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(22).jpg" alt="thumb22" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(23).jpg" alt="thumb23" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(24).jpg" alt="thumb24" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(25).jpg" alt="thumb25" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(26).jpg" alt="thumb26" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(27).jpg" alt="thumb27" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(28).jpg" alt="thumb28" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(29).jpg" alt="thumb29" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(30).jpg" alt="thumb30" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(31).jpg" alt="thumb31" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(32).jpg" alt="thumb32" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(33).jpg" alt="thumb33" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(34).jpg" alt="thumb34" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(35).jpg" alt="thumb35" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(36).jpg" alt="thumb36" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(37).jpg" alt="thumb37" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(38).jpg" alt="thumb38" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(39).jpg" alt="thumb39" title="image of movie">
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(40).jpg" alt="thumb40" title="image of movie">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(41).jpg" alt="thumb41" title="image of movie">
+
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(42).jpg" alt="thumb42" title="image of movie">
+
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images.jpg" alt="thumb43" title="image of movie">
+
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(1).jpg" alt="thumb1" title="image of movie">
+                                Shadow of a Doubt (1943)
+                            </div>
+                            <div class="pull-left carousel-img-5 img-thumbnail">
+                                <img src="img/images(2).jpg" alt="thumb2" title="image of movie">
+                                The 39 Steps (1935)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <p></p>
+            </div>
+            <div class="row">
+                <h3>Psycho (1960)</h3>
+                <p>Psycho is a 1960 American psychological horror film directed and produced by Alfred Hitchcock, and
+                    written by Joseph Stefano, starring Anthony Perkins, Janet Leigh, John Gavin, Vera Miles and Martin
+                    Balsam, and was based on the 1959 novel of the same name by Robert Bloch. The film centers on the
+                    encounter between a secretary, Marion Crane (Leigh), who ends up at a secluded motel after stealing
+                    money from her employer, and the motel's disturbed owner-manager, Norman Bates (Perkins), and its
+                    aftermath.[4]
+                </p>
+                <p>
+                    When originally made, the film was seen as a departure from Hitchcock's previous film North by
+                    Northwest, having been filmed on a low budget, with a television crew and in black and white. Psycho
+                    initially received mixed reviews, but outstanding box office returns prompted reconsideration which
+                    led to overwhelming critical acclaim and four Academy Award nominations, including Best Supporting
+                    Actress for Leigh and Best Director for Hitchcock. Psycho is now considered one of Hitchcock's best
+                    films[5] and praised as a work of cinematic art by international film critics and film scholars.
+                    Ranked among the greatest films of all time, it set a new level of acceptability for violence,
+                    deviant behavior and sexuality in American films,[6] and is widely considered to be the earliest
+                    example of the slasher film genre.
+                </p>
+                <p>
+                    After Hitchcock's death in 1980, Universal Studios began producing follow-ups: three sequels, a
+                    remake, a television film spin-off, and a prequel TV series. In 1992, the US Library of Congress
+                    deemed the film "culturally, historically, or aesthetically significant" and selected it for
+                    preservation in the National Film Registry.
+                </p>
+
+                <img src="img/" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script type="application/javascript">
+</script>
+</html>
