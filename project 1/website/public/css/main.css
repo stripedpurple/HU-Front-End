@@ -208,7 +208,6 @@ section#gear {
     color: whitesmoke;
     padding: 1em;
     margin: 0;
-    vertical-align: text-bottom;
     transition: opacity 0.5s ease;
     opacity: 0;
 }

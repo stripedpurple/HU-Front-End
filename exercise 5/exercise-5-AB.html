@@ -1,0 +1,70 @@
+<!--
+Read chapter 13 - Boxes
+
+Create an HTML document called exercise-5-JBB.html and place it in a root folder called Exercise 5 - the exercise will
+be graded on these criteria and must contain the following:
+
+    • A proper HTML5 doctype
+    • An externally linked normalize.css file and an externally linked styles.css file
+    • Demonstration of CSS property width & height used for box sizing.
+    • Demonstration of CSS property min-width, max-width, min-height and max-height used for box sizing.
+    • Demonstration of CSS property overflow (hidden & scroll).
+    • Demonstration of CSS property border and border-radius.
+    • Demonstration of CSS property margin & padding used for box spacing.  Use the margin value auto to demonstrate block element centering.
+    • Demonstration of CSS property box-shadow used for CSS drop shadows.
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Exercise 5</title>
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+<div class="container bg-blue">
+    <div class="row bg-red bordered">
+        <div class="col-md-4 bg-green"></div>
+        <div class="col-md-4 bg-yellow"></div>
+        <div class="col-md-4 bg-blue"></div>
+    </div>
+    <div class="row bg-green">
+        <div class="col-md-4 bg-none">
+            <div class="circle bg-yellow bordered"></div>
+        </div>
+        <div class="col-md-4 bg-none">
+            <div class="circle bg-blue bordered"></div>
+        </div>
+        <div class="col-md-4 bg-none">
+            <div class="circle bg-red bordered"></div>
+        </div>
+    </div>
+    <div class="row bg-yellow">
+        <div class="short ov-scroll"><img src="public/img/alphabet.jpg" alt=""></div>
+    </div>
+    <div class="row bg-red">
+        <div class=" short ov-hidden"><div class="col-md-4 bg-green bordered"></div>
+        <div class="col-md-4 bg-yellow bordered"></div>
+        <div class="col-md-4 bg-blue bordered"></div>
+        <div class="col-md-4 bg-red bordered"></div>
+        <div class="col-md-4 bg-green bordered"></div>
+        <div class="col-md-4 bg-yellow bordered"></div>
+        <div class="col-md-4 bg-blue bordered"></div>
+        <div class="col-md-4 bg-red bordered"></div>
+        <div class="col-md-4 bg-green bordered"></div>
+        <div class="col-md-4 bg-yellow bordered"></div>
+        <div class="col-md-4 bg-blue bordered"></div>
+        <div class="col-md-4 bg-red bordered"></div>
+        <div class="col-md-4 bg-green bordered"></div>
+        <div class="col-md-4 bg-yellow bordered"></div>
+        <div class="col-md-4 bg-blue bordered"></div>
+        <div class="col-md-4 bg-red bordered"></div></div>
+    </div>
+</div>
+</body>
+</html>
