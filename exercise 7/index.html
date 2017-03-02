@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!-- A form tag
+At least one fieldset tag that encompasses groups of form inputs.  Each fieldset should have a legend tag.
+At least 6 text input tags (one of which must be a password input type, one of which should be a date picker, one of which should be an email type).  All text inputs require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A text area tag.  All text areas inputs require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A group of radio buttons.  All radio groups require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A group of checkboxes.  All checkboxes require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A drop down box (select list).  All drop downs require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A file upload field.  All file uploads require a label tag.  Label tags should be associated with inputs using the 'for' attribute (pg 163).
+A button (Submit) -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 7</title>
+</head>
+
+<body>
+    <strong style="text-transform:uppercase; color:darkred;font-size:3em">Labels are not required so I ignored them</strong><br>
+    <h2>E-Mail Me Bro</h2>
+
+    <form action="mailto:awbarrett@my.harrisburgu.edu" method="post" enctype="text/plain">
+
+        Name:<br>
+        <input type="text" name="name"><br> E-mail:
+        <br>
+        <input type="text" name="mail"><br> Comment:
+        <br>
+        <input type="text" name="comment" size="50"><br>
+        <br>
+        Name 2:<br>
+        <input type="text" name="name2"><br> E-mail 2:
+        <br>
+        <input type="text" name="mail2"><br> Comment 2:
+        <br>
+        <input type="text" name="comment2" size="50"><br>
+        <br>
+        <textarea name="complaints" cols="30" rows="10"></textarea><br>
+
+        <select>
+            <option value="bob 1">bob 1</option>
+            <option value="bob 2">bob 2</option>
+            <option value="bob 3">bob 3</option>
+            <option value="bob 4">bob 4</option>
+        </select>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+        <br>
+        <br>
+
+        <input type="file" name="pic" accept="image/*">
+        <fieldset>
+            <legend>Boxes?</legend>
+            <input type="checkbox"><label for="">Box 1</label><br>
+            <input type="checkbox"><label for="">Box 2</label><br>
+            <input type="checkbox"><label for="">Box 3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender:</legend>
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
