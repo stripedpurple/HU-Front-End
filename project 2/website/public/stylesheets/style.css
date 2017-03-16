@@ -1,0 +1,109 @@
+:root {
+    --blue: #0260AF;
+    --red: #EC1F23;
+    --dark-grey: #272727;
+}
+
+a {
+    color: var(--dark-grey);
+    text-decoration: none;
+    transition: .3s color;
+}
+
+a:hover {
+    text-decoration: none;
+
+    color: var(--blue);
+}
+
+section.padded {
+    padding: 1em;
+}
+
+#footer,
+#footer a {
+    color: whitesmoke;
+}
+
+#footer .title {
+    font-size: 18px;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    padding-right: 1em;
+    display: inline-block;
+}
+
+.full-width{
+    width: 100%;
+    max-width: 100%;
+}
+
+.bg-dark {
+    background: var(--dark-grey);
+}
+
+.btn {
+    border-radius: 0;
+    padding: 5px 10px;
+}
+
+.bg-dark .btn.btn-dark {
+    border: 2px solid white;
+}
+
+.bg-dark .btn.btn-dark:hover {
+    color: white !important;
+}
+
+.max-height {
+    max-height: 100%;
+}
+
+.navbar-default {
+    background: var(--dark-grey);
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a {
+    transition: 0.3s all;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background: var(--blue);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+    background: var(--red);
+    color: white;
+}
+
+input {
+    -webkit-appearance:none;
+    display: block;
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.input-bottom input {
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 5px 10px;
+    width: 100%;
+}
