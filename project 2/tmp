@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The largest phase (grade-wise) of this project is the development phase.
+During this phase students, will develop their PSD files.
+Students will develop their designs with the following folder structure shown.
+
+Students will be graded on the following criteria and their success at implementing each:
+
+• Understanding of site naming conventions and folder structure and organization.
+• Linking to external style sheets (no embedded styles).
+• Linking to and placing images within your web site content.
+• Inclusion of alt tags for images, semantic HTML and accessibility attributes.
+• Inclusion of title and meta tags in the document <head>.
+• Working with CSS for layout and fonts as well as an understanding of the CSS box model
+    and usage of appropriate HTML tags for page structure.
+• Display an understanding of the 5 types of CSS selectors (tag, ID, class, pseudo, and compound).
+• Creation of well-structured and semantic HTML markup.
+• Display a clear understanding of graphic optimization and graphic formats (GIF, PNG, JPG) on the web.
+• Usage of CSS background graphics and the background property.
+• Creation of a CSS, list-based <ul> navigation with roll overs.
+• *NEW - Valid links to all four pages of the site.
+• *NEW - Use of PHP (include/require function) to create a page template.
+    The site need to be a minimum of 4 pages.
+• *NEW - Creation of a list-based form with appropriate form inputs and labels.
+    The form must be styled using CSS. The form needs a minimum of 3 text boxes,
+    1 text area, a submit button and either a drop down, checkbox or radio button to meet requirements.
+
+
+
+
+
+
+
+
+

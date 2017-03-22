@@ -2,6 +2,7 @@
     --blue: #0260AF;
     --red: #EC1F23;
     --dark-grey: #272727;
+    --grey: #f7f7f7;
 }
 
 a {
@@ -12,6 +13,7 @@ a {
 
 a:hover {
     text-decoration: none;
+
     color: var(--blue);
 }
 
@@ -45,6 +47,10 @@ section.padded {
 
 .bg-dark {
     background: var(--dark-grey);
+}
+
+.bg-grey {
+    background: var(--grey);
 }
 
 .btn {
@@ -98,8 +104,25 @@ section.padded {
     color: white;
 }
 
+.product .col-md-1,
+.product .col-md-2,
+.product .col-md-3,
+.product .col-md-4,
+.product .col-md-5,
+.product .col-md-6,
+.product .col-md-7,
+.product .col-md-8,
+.product .col-md-9,
+.product .col-md-10,
+.product .col-md-11,
+.product .col-md-12 {
+    background: white;
+    border: 2px solid var(--grey)
+}
+
 .bg-dark textarea,
 .bg-dark input {
+    -webkit-appearance: none;
     color: white;
     -webkit-appearance: none;
     display: block;
@@ -112,12 +135,8 @@ section.padded {
 
 .bg-dark textarea.input-bottom,
 .bg-dark input.input-bottom {
-    /*display: block;*/
-    /*background: transparent;*/
     border: none;
     border-bottom: 2px solid white;
-    /*padding: 5px 10px;*/
-    /*width: 100%;*/
 }
 
 .fa {
