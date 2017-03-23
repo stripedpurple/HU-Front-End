@@ -11,21 +11,39 @@ a {
     transition: .3s color;
 }
 
+.bg-dark a:hover,
 a:hover {
     text-decoration: none;
-
     color: var(--blue);
+}
+
+.bg-dark a {
+    color: white;
 }
 
 section.padded {
     padding: 1em;
 }
 
+address {
+    font-size: 1.5em;
+}
+
+.zero{
+    margin:0;
+    padding: 0;
+}
+
+.constrain-1024 {
+    max-width: 1024px;
+}
+
+
 #footer,
 #footer a {
     color: whitesmoke;
 }
-
+.title,
 .bg-dark .title {
     font-size: 18px;
     color: var(--blue);
@@ -35,7 +53,7 @@ section.padded {
     text-transform: uppercase;
     font-weight: bold;
 }
-
+.title .red,
 .bg-dark .title .red {
     color: var(--red);
 }
@@ -47,6 +65,7 @@ section.padded {
 
 .bg-dark {
     background: var(--dark-grey);
+    color:white;
 }
 
 .bg-grey {
@@ -117,14 +136,13 @@ section.padded {
 .product .col-md-11,
 .product .col-md-12 {
     background: white;
-    border: 2px solid var(--grey)
+    border: 3px solid var(--grey);
 }
 
-.bg-dark textarea,
+.bg-dark textarea,      
 .bg-dark input {
     -webkit-appearance: none;
     color: white;
-    -webkit-appearance: none;
     display: block;
     background: transparent;
     border: none;
@@ -161,4 +179,8 @@ section.padded {
 
 .fa.fa-youtube:hover {
     color: #bb0000;
+}
+
+.product .img-responsive {
+    margin: auto;
 }
