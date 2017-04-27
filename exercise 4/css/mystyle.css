@@ -20,7 +20,7 @@
     width: 100%;
 }
 
-div:first-child > p:first-letter{
+div p:first-of-type:first-letter{
     font-size: 2em;
     font-weight: 900;
 }

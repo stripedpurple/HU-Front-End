@@ -198,6 +198,11 @@ pre {
   list-style: none;
 }
 
+.inline {
+  display: inline;
+
+}
+
 ul.list-inline{
   margin: 0;
 
@@ -209,14 +214,17 @@ ul.list-inline{
 
 footer {
   background: $background-color-dark;
+  color: $text-color-dark;
+
   &.site-footer {
     padding-bottom: 0;
 
   }
   & .footer-bar {
     background: darken($background-color-dark, 3%);
-    border-top:1px solid #ddd;
+    border-top:1px solid darken(#ddd, 10%);
     padding: 1em;
+    color: darken($text-color-dark, 10%);
     @extend %clearfix
   }
   
@@ -231,4 +239,40 @@ div.pull-right {
   display: inline-block;
 }
 
+.container-fliud{
+  padding: 1em;
+  min-width:100%;
 
+  & .container{
+    padding:0;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  padding: 1em;;
+  margin:auto;
+}
+
+.text-lg{
+  font-size:20px;
+}
+
+
+.text-italic{
+  font-style: italic;
+}
+
+.bg-green{
+  background: $brand-green;
+  color: $text-color-dark
+}
+
+.hero {
+  background: $brand-green url("/assets/img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:720px;
+}

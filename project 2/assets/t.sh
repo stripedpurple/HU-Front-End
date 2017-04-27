@@ -1,59 +1,24 @@
 #!/bin/bash
+mkdir -p /home/admin/useraccounts
 
-mv '1111.jpeg' '1.jpeg'
-mv '1123.jpeg' '2.jpeg'
-mv '155 - N1nF1p8.jpeg' '3.jpeg'
-mv '185 - ECgj6kC.jpeg' '4.jpeg'
-mv '4545.jpeg' '5.jpeg'
-mv 'AUSSIE.jpeg' '6.jpeg'
-mv 'AZT-400-KIT-2_2.jpeg' '7.jpeg'
-mv 'FLGMT-JCR.jpg' '8.jpeg'
-mv 'GIx82Pu-1.jpeg' '9.jpeg'
-mv 'IMG_6139.jpg' '10.jpeg'
-mv 'IMG_6149.jpg' '11.jpeg'
-mv 'IMG_6152.jpg' '12.jpeg'
-mv 'IMG_6160.jpeg' '13.jpeg'
-mv 'IMG_6160.jpg' '14.jpeg'
-mv 'PXLcvAl.jpeg' '15.jpeg'
-mv 'baja-xrs-fc4.jpeg' '16.jpeg'
-mv 'bandsaw.jpg' '17.jpeg'
-mv 'bender.jpg' '18.jpeg'
-mv 'big-brake.jpeg' '19.jpeg'
-mv 'cj7-rocker_1_1_2.jpeg' '20.jpeg'
-mv 'clayton.jpeg' '21.jpeg'
-mv 'drillpress.jpg' '22.jpeg'
-mv 'everlast.jpg' '23.jpeg'
-mv 'f0eI3tr.jpeg' '24.jpeg'
-mv 'fHah13u_1.jpeg' '25.jpeg'
-mv 'fab-services.jpeg' '26.jpeg'
-mv 'hood.jpeg' '27.jpeg'
-mv 'image (1)_1_1_2.jpeg' '28.jpeg'
-mv 'image3_1_1.jpeg' '29.jpeg'
-mv 'image_1_15_2.jpeg' '30.jpeg'
-mv 'image_1_1_2.jpeg' '31.jpeg'
-mv 'image_1_2_2.jpeg' '32.jpeg'
-mv 'image_1_7_2.jpeg' '33.jpeg'
-mv 'image_2_1.jpeg' '34.jpeg'
-mv 'images (10).jpeg' '35.jpeg'
-mv 'images (4).jpeg' '36.jpeg'
-mv 'images.jpeg' '37.jpeg'
-mv 'images_1.jpeg' '38.jpeg'
-mv 'jhHEtry.jpeg' '39.jpeg'
-mv 'jk2101 ds1.jpeg' '40.jpeg'
-mv 'lathe.jpg' '41.jpeg'
-mv 'lj-2.jpeg' '42.jpeg'
-mv 'metal-brake.jpg' '43.jpeg'
-mv 'miller.jpg' '44.jpeg'
-mv 'notch.jpg' '45.jpeg'
-mv 'p-1272-ART-129-R-resize-store.jpeg' '46.jpeg'
-mv 'p9EAIYs.jpeg' '47.jpeg'
-mv 'plasma-cutter.jpg' '48.jpeg'
-mv 'plasma.jpg' '49.jpeg'
-mv 'press.jpg' '50.jpeg'
-mv 'sander.jpg' '51.jpeg'
-mv 'skid.jpeg' '52.jpeg'
-mv 'soft-tops.jpeg' '53.jpeg'
-mv 'steer.jpeg' '54.jpeg'
-mv 'tube.jpeg' '55.jpeg'
-mv 'warn_1.jpeg' '56.jpeg'
-mv 'x0VqzLl.jpeg' '57.jpeg'
+for i in $@
+do
+    useradd $i
+
+    < /dev/urandom tr -dc A-Na-n1-9_ | head -c8 > /tmp/passwd.txt
+
+    pwd=$(cat /tmp/passwd.txt)
+    echo -e "$pwd\n$pwd" | passwd $i
+    echo -e "Username:$i\n" > /home/admin/useraccounts/$i
+    echo -e "password:\n" >> /home/admin/useraccounts/$i
+    cat /tmp/passwd.txt >> /home/admin/useraccounts/$i
+done
+
+rm -rf /tmp/passwd.txt
+
+
+
+Just a Kid
+For a Memory
+Tightrope
+Everything U Need
